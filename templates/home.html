@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+  <body>
+    <div class="root">
+      <!--<div class="aside">
+        <div class="rec_input">
+          <div class="input_data">
+            <form method="post">
+              {% csrf_token %}
+              <input
+                type="text"
+                class="rec_Input"
+                placeholder="Recent search..."
+              />
+            </form>
+            <button class="rec_btn">search</button>
+          </div>
+          <div class="output_data">
+            <a href="">New York...</a>
+          </div>
+        </div>
+      </div>--->
+      <div class="input">
+        <form method="post">
+          {% csrf_token %}
+          <h1>Find the weather</h1>
+          <input
+            type="text"
+            name="main_Input"
+            class="main_input"
+            placeholder="City..."
+          /><br />
+          <button class="main_btn">Search</button>
+        </form>
+      </div>
+      <div class="result">
+        <div class="data">
+          {% if weather %}
+          <div class="img">
+            <img
+              src="{{weather.icon}}"
+            />
+          </div>
+          <div class="value">
+            <p>{{weather.temp}} °C</p>
+          </div>
+          <div class="other">
+            <span>Pressure: {{weather.pre}}%</span><br />
+            <span>Humidity: {{weather.hum}}%</span><br />
+            <span>Wind: {{weather.wind}} km/h</span>
+          </div>
+          <div class="place">
+            <h2>Weather</h2>
+            <h4>{{weather.name}}, {{weather.country}}</h4>
+            <h5>{{weather.description}}</h5>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

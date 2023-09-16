@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+.root {
+  width: 100%;
+  height: 39.5rem;
+  padding-left: 16rem;
+}
+.aside {
+  width: 17rem;
+  height: 100%;
+  border-right: 1px #000 solid;
+  float: left;
+}
+.input {
+  width: 67rem;
+  height: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+.result {
+  width: 67rem;
+  height: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+form {
+  margin-right: 12rem;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 7rem;
+  margin-left: 0.7rem;
+}
+.main_input {
+  width: 19rem;
+  height: 3rem;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: 1px #000 solid;
+  text-align: center;
+  float: left;
+}
+.main_btn {
+  width: 19.5rem;
+  height: 3.5rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px #000 solid;
+  color: #fff;
+  background: #000;
+  float: left;
+  cursor: pointer;
+}
+.rec_Input {
+  width: 11.3rem;
+  height: 2.5rem;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: 1px #000 solid;
+  text-align: center;
+  float: left;
+}
+.rec_btn {
+  width: 4rem;
+  height: 2.8rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 0.3rem;
+  border: 1px #000 solid;
+  color: #000000;
+  background: #ffffff;
+  float: left;
+  cursor: pointer;
+}
+.input_data {
+  width: 100%;
+  height: 3.5rem;
+  background: #cfcdcd86;
+}
+.output_data {
+  width: 95%;
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  border: 1px #000 solid;
+  justify-content: center;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+}
+::placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+.data {
+  width: 40rem;
+  height: 12rem;
+  margin-right: 10rem;
+}
+.img,
+.value,
+.other {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+h2,
+h4,
+h5 {
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  font-size: 3rem;
+}
+.img {
+  margin-top: 3rem;
+}
+.value,
+.other,
+.place {
+  margin-top: 4rem;
+}
+img {
+  margin-left: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #252121;
+}
